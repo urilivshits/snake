@@ -138,22 +138,22 @@ body {
     transition: all 0.2s;
 }
 
-#left:active {
+#left:hover {
     background-color: blanchedalmond;
     color: black;
 }
 
-#right:active {
+#right:hover {
     background-color: blanchedalmond;
     color: black;
 }
 
-#up:active {
+#up:hover {
     background-color: blanchedalmond;
     color: black;
 }
 
-#down:active {
+#down:hover {
     background-color: blanchedalmond;
     color: black;
 }
