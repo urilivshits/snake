@@ -1,15 +1,27 @@
 body {
     background-color: black;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    
 }
 
 #canvas {
     background-color: black;
     border-radius: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 10px;
 }
 
 #buttonsContainer {
     background-color: black;
-    width: 340px;
+    width: 360px;
     height: 190px;
     display: flex;
     flex-wrap: wrap;
@@ -177,13 +189,11 @@ body {
     -ms-user-select:none;
     -webkit-tap-highlight-color:rgba(0,0,0,0);
     border-radius: 5px;
-    /* border: 10px solid black; */
 }
 
 #start {
     width: 30%;
     padding: 20px 0;
-    /* margin: 5px; */
     border-radius: 10px;
     background-color: black;
     color: blanchedalmond;
@@ -194,4 +204,11 @@ body {
     font-family:'Roboto',sans-serif;
     text-shadow: 0 0.04em 0.04em rgba(0,0,0,0.35);
     transition: all 0.2s;
+}
+
+@media only screen and (min-width: 415px) {
+    body {
+        width: 415px;
+        margin: auto;
+    }
 }
