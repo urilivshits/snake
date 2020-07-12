@@ -344,7 +344,7 @@ $("#speedUp").click(() => {
 $("#speedDown").click(() => {
     speed--;
     time += 10;
-    if (speed < 0) {
+    if (speed <= 0) {
         paused = true;
         speed = 0;
         time = 200;
