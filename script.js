@@ -78,14 +78,14 @@ class Block {
         this.row = row;
     };
 
-    drawSquare = (color) => {
+    drawSquare (color) {
         var x = this.col * blockSize;
         var y = this.row * blockSize;
         ctx.fillStyle = color;
         ctx.fillRect(x, y, blockSize, blockSize);
     };
 
-    drawCircle = (color) => {
+    drawCircle (color) {
         var x = this.col * blockSize + blockSize / 2;
         var y = this.row * blockSize + blockSize / 2;
         ctx.fillStyle = color;
@@ -94,7 +94,7 @@ class Block {
         ctx.fill();
     };
 
-    equal = (otherBlock) => {
+    equal (otherBlock) {
         return this.col === otherBlock.col && this.row === otherBlock.row;
     };
 };
@@ -111,7 +111,7 @@ class Snake {
         this.nextDirection = "right";
     };
 
-    draw = () => {
+    draw () {
         let colorChanged = false;
         this.segments[0].drawSquare("#ff709b");
         for (let i = 1; i < this.segments.length; i++) {
@@ -128,7 +128,7 @@ class Snake {
         // });
     };
 
-    move = () => {
+    move () {
         var head = this.segments[0];
         var newHead;
 
@@ -180,7 +180,7 @@ class Snake {
         }
     };
 
-    checkCollision = (head) => {
+    checkCollision (head) {
         let leftCollision = (head.col === 0);
         let topCollision = (head.row === 0);
         let rightCollision = (head.col === widthInBlocks - 1);
@@ -198,7 +198,7 @@ class Snake {
         return wallCollision || selfCollision;
     };
 
-    setDirection = (newDirection) => {
+    setDirection (newDirection) {
         if (this.direction === "up" && newDirection === "down") {
             return;
         }
@@ -221,11 +221,11 @@ class Apple {
         this.position = new Block(10, 10);
     };
 
-    draw = () => {
+    draw () {
         this.position.drawCircle("limegreen");
     };
 
-    move = () => {
+    move () {
         // let i = snake.segments.length;
         // while (i > 0) {
         //     i--;
@@ -361,5 +361,3 @@ $("#pause").click(() => {
     }
 });
 $("#start").click(() => location.reload());
-
-startOver();
