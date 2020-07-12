@@ -1,0 +1,197 @@
+body {
+    background-color: black;
+}
+
+#canvas {
+    background-color: black;
+    border-radius: 5px;
+}
+
+#buttonsContainer {
+    background-color: black;
+    width: 340px;
+    height: 190px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    user-select: none;
+    cursor: none;
+    outline: none;
+    -webkit-touch-callout:none;
+    -webkit-user-select:none;
+    -khtml-user-select:none;
+    -moz-user-select:none;
+    -ms-user-select:none;
+    -webkit-tap-highlight-color:rgba(0,0,0,0);
+    border-radius: 5px;
+    border: 10px solid black;
+}
+
+#speedDown {
+    order: 1;
+    width: 30%;
+    padding: 5px 0;
+    margin: 0 5px;
+    border-radius: 5px;
+    background-color: #2b3445;
+    color: blanchedalmond;
+    outline: none;
+
+
+}
+
+#pause {
+    order: 2;
+    width: 30%;
+    padding: 5px 0;
+    margin: 0 5px;
+    border-radius: 5px;
+    background-color: #2b3445;
+    color: blanchedalmond;
+    outline: none;
+}
+
+#speedUp {
+    order: 3;
+    width: 30%;
+    padding: 5px 0;
+    margin: 0 5px;
+    border-radius: 5px;
+    background-color: #2b3445;
+    color: blanchedalmond;
+    outline: none;
+}
+
+#left {
+    order: 4;
+    width: 30%;
+    padding: 20px 0;
+    margin: 5px;
+    border-radius: 10px;
+    background-color: black;
+    color: blanchedalmond;
+    outline: none;
+    border: 1px solid blanchedalmond;
+    font-size: 20px;
+    font-weight: bold;
+    font-family:'Roboto',sans-serif;
+    text-shadow: 0 0.04em 0.04em rgba(0,0,0,0.35);
+    transition: all 0.2s;
+}
+
+#upDownContainer {
+    order: 5;
+    width: 30%;
+    margin: 5px;
+}
+
+#right {
+    order: 6;
+    width: 30%;
+    padding: 20px 0;
+    margin: 5px;
+    border-radius: 10px;
+    background-color: black;
+    color: blanchedalmond;
+    outline: none;
+    border: 1px solid blanchedalmond;
+    font-size: 20px;
+    font-weight: bold;
+    font-family:'Roboto',sans-serif;
+    text-shadow: 0 0.04em 0.04em rgba(0,0,0,0.35);
+    transition: all 0.2s;
+}
+
+#up {
+    order: 1;
+    width: 100%;
+    padding: 20px 0;
+    margin: 7px 0;
+    border-radius: 10px;
+    background-color: black;
+    color: blanchedalmond;
+    outline: none;
+    border: 1px solid blanchedalmond;
+    font-size: 20px;
+    font-weight: bold;
+    font-family:'Roboto',sans-serif;
+    text-shadow: 0 0.04em 0.04em rgba(0,0,0,0.35);
+    transition: all 0.2s;
+}
+
+#down {
+    order: 2;
+    width: 100%;
+    padding: 20px 0;
+    margin: 7px 0;
+    border-radius: 10px;
+    background-color: black;
+    color: blanchedalmond;
+    outline: none;
+    border: 1px solid blanchedalmond;
+    font-size: 20px;
+    font-weight: bold;
+    font-family:'Roboto',sans-serif;
+    text-shadow: 0 0.04em 0.04em rgba(0,0,0,0.35);
+    transition: all 0.2s;
+}
+
+#left:active {
+    background-color: blanchedalmond;
+    color: black;
+}
+
+#right:active {
+    background-color: blanchedalmond;
+    color: black;
+}
+
+#up:active {
+    background-color: blanchedalmond;
+    color: black;
+}
+
+#down:active {
+    background-color: blanchedalmond;
+    color: black;
+}
+
+#startContainer {
+    background-color: black;
+    width: 360px;
+    height: 190px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    user-select: none;
+    cursor: none;
+    outline: none;
+    -webkit-touch-callout:none;
+    -webkit-user-select:none;
+    -khtml-user-select:none;
+    -moz-user-select:none;
+    -ms-user-select:none;
+    -webkit-tap-highlight-color:rgba(0,0,0,0);
+    border-radius: 5px;
+    /* border: 10px solid black; */
+}
+
+#start {
+    width: 30%;
+    padding: 20px 0;
+    /* margin: 5px; */
+    border-radius: 10px;
+    background-color: black;
+    color: blanchedalmond;
+    outline: none;
+    border: 10px solid #2b3445;
+    font-size: 40px;
+    font-weight: bold;
+    font-family:'Roboto',sans-serif;
+    text-shadow: 0 0.04em 0.04em rgba(0,0,0,0.35);
+    transition: all 0.2s;
+}
