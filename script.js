@@ -361,3 +361,5 @@ $("#pause").click(() => {
     }
 });
 $("#start").click(() => location.reload());
+
+startOver();
